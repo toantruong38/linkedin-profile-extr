@@ -1,0 +1,33 @@
+{
+    "name": "LinkedIn Profile EXTR",
+    "description": "LinkedIn profile extractor",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "scripting",
+        "activeTab",
+        "webNavigation",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://*/",
+        "https://*/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.linkedin.com/in/*"
+            ],
+            "js": [
+                "content_script.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

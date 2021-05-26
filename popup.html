@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="popup.js"></script>
+
+    <code id="test"></code>
+
+    <div class="container-fluid" style="width: 350px;">
+
+        <div id="loading" style="visibility: visible;">
+            <h3>Loading....</h3>
+        </div>
+
+        <div id="main-content" style="visibility: hidden;">
+
+            <div id="profile-intro" class="d-flex flex-fill ">
+                <div class="">
+                    <img src="" alt="Profile Image" class="rounded-circle mt-2" height="70px" width="70px"
+                        id="profileImg">
+                </div>
+                <div class="ms-3 mt-2">
+                    <div>
+
+                        <span class="fw-bold" id="fullName"></span>
+                    </div>
+                    <div>
+
+                        <span class="fw-lighter" id="headline"></span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-2">
+
+            <div id="contact" class="mb-2">
+                <div id="header">
+                    <span class="text-uppercase">contact</span>
+
+                </div>
+                <div id="contact-childs" class="ms-2 fw-light">
+
+                    <div id="email">
+                        <small>
+                        </small>
+                    </div>
+                    <div id="location">
+                        <small>
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-2">
+
+            <div id="social-media" class="mb-2">
+                <div id="header">
+                    <span class="text-uppercase">social media</span>
+                </div>
+                <div id="sm-childs" class="ms-2 fw-light">
+                </div>
+
+                <hr class="my-2">
+                <div id="working-history" class="mb-2">
+                    <div id="header">
+                        <span class="text-uppercase">working history</span>
+                    </div>
+
+                    <div id="wh-content" class="ms-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
